@@ -29,13 +29,14 @@
     </tr>
     </thead>
     <tbody>
+    <tbody>
     <tr th:each="product: ${products}" th:object="${product}">
         <td th:text="*{productId}"></td>
-        <td th:text="*{roductName}"></td>
+        <td th:text="*{productName}"></td>
         <td th:text="*{category}"></td>
-        <td th:text="*{rice}"></td>
+        <td th:text="*{price}"></td>
         <td th:text="*{description}"></td>
-        <td th:text="*{reatedAt}"></td>
+        <td th:text="*{createdAt}"></td>
         <td th:text="*{updatedAt}"></td>
     </tr>
 
