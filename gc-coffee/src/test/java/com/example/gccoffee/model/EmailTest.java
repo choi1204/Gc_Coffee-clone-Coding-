@@ -15,15 +15,15 @@ class EmailTest {
 
     @Test
     public void testValidEmail() {
-        Email email = new Email("hello@gamil.com");
-        assertTrue(email.getAddress().equals("hello@gamil.com"));
+        Email email = new Email("hello@gmail.com");
+        assertEquals("hello@gmail.com", email.getAddress());
     }
 
     @Test
     public void testEqEmail() {
         Email email = new Email("hello@gmail.com");
         Email email2 = new Email("hello@gmail.com");
-        assertTrue(email.getAddress().equals(email2));
+        assertEquals(email, email2);
     }
 
 }
